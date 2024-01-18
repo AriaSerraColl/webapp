@@ -42,13 +42,26 @@ body {
     display: none;
 }
 #seccio_2 {
+    display: none;    /* única secció que es mostra a l'inici */
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+    display: none;
+}
+#seccio_3 {
     display: flex;    /* única secció que es mostra a l'inici */
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
     display: none;
 }
-
+#seccio_3 {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmax;
+}
 #menu {
     height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
 }
