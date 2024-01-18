@@ -28,7 +28,7 @@ body {
     display: none;    /* les seccions s'inicien ocultes, excepte la primera */
 }
 #seccio_0 {
-    display: none;    /* única secció que es mostra a l'inici */
+    display: flex;    /* única secció que es mostra a l'inici */
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
@@ -81,7 +81,7 @@ body {
     }
 }
 #seccio_0 {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -94,15 +94,9 @@ body {
     align-items: center;
     font-size: 4vmax;
 }
-#seccio_0 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vmax;
-}
+
 #credencials {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: right;
     font-size: 3vmax;
@@ -116,7 +110,7 @@ body {
     font-size: 3vmax;
 }
 #botons_sessio {
-    display: flex;
+    display: none;
     align-items: center;
 }
 #botons_sessio button {    /* els 2 botons dins de botons_sessio */
