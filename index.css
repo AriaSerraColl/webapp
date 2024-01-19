@@ -46,20 +46,18 @@ body {
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
-    display: none;
 }
 #seccio_3 {
+    display: none;    /* única secció que es mostra a l'inici */
+    justify-content: flex-start;    /* contingut centrat en la direcció de disposició */
+    align-items: flex ;    /* contingut centrat en la direcció transversal */
+    flex-direction: column;
+    font-size: 4vmax;
+}
+#seccio_4 {
     display: flex;    /* única secció que es mostra a l'inici */
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
-    font-size: 4vmax;
-    display: none;
-}
-#seccio_3 {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
     font-size: 4vmax;
 }
 #menu {
@@ -202,8 +200,8 @@ body {
 }
 #llista_titol {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: start;
     text-align: center;
 }
 #llista_titol i {
@@ -212,6 +210,7 @@ body {
 }
 #llista_titol i:nth-child(1) {    /* primer <i> (miniatura de la foto) */
     flex: 2;
+
 }
 #llista_titol i:nth-child(2) {    /* segon <i> (data i hora) */
     flex: 3;
