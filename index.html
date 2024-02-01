@@ -8,7 +8,7 @@
          Webapp
         </title>
         <link rel="stylesheet" href="index.css">
-        <link href="index.js"
+        <link href="index.js">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
@@ -51,8 +51,8 @@
             </div>
           </div>
           <div id="botons_sessio">    <!-- contenidor per als botons -->
-            <button>Inicia sessió</button>
-            <button>Nou usuari</button>
+            <button oneclick="inici_sessio()">Inicia sessió</button>
+            <button oneclick="nou_usuari()">Nou usuari</button>
           </div>         
         </div>
         <div id="seccio_2" class="seccio">
@@ -88,7 +88,7 @@
             <i id="boto_2" class="fa-solid fa-camera"></i>    <!-- càmera -->
             <i id="boto_3" class="fa-solid fa-image"></i>     <!-- galeria -->
             <i id="boto_4" class="fa-solid fa-map"></i>    <!-- mapa -->
-            <i class="fa-solid fa-right-from-bracket"></i>    <!-- tancar sessió -->
+            <i class="fa-solid fa-right-from-bracket" oneclick="tanca_sessio()"></i>    <!-- tancar sessió -->
           </div>
     </body>
 </html>
