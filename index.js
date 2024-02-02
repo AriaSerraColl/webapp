@@ -1,4 +1,4 @@
-let scriptURL = "AKfycbwFXK-gULVpvONxve2ZYIS0wNjifpzMEFGLmcf2IN98sijVj5nYOPIJp_-5Vh6mbQc2"   // aquí s'ha d'escriure l'URL del script
+let scriptURL = "https://script.google.com/macros/library/d/1BLJSnDKuLfcPDceRe93DbAEjp3oCTX-WM0cVnOQStN2foVj3XEVVg-fq/1"   // aquí s'ha d'escriure l'URL del script
 let consulta = scriptURL + "?query=select&where=Tipus&is=Turisme";
     fetch(consulta)
         .then((resposta) => {    // primera "promesa"
