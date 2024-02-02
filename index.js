@@ -1,4 +1,4 @@
-let scriptURL = "https://script.google.com/macros/s/AKfycbwyzwldvEb4U-AIuEbB27BvArolEW_Tg5_JloJ3a4vGqe1pujeielQs1dbMSnb0wLe1Hw/exec"    // aquí s'ha d'escriure l'URL del script
+let scriptURL = "AKfycbwFXK-gULVpvONxve2ZYIS0wNjifpzMEFGLmcf2IN98sijVj5nYOPIJp_-5Vh6mbQc2"   // aquí s'ha d'escriure l'URL del script
 let consulta = scriptURL + "?query=select&where=Tipus&is=Turisme";
     fetch(consulta)
         .then((resposta) => {    // primera "promesa"
@@ -7,6 +7,8 @@ let consulta = scriptURL + "?query=select&where=Tipus&is=Turisme";
         .then((resposta) => {    // segona "promesa". Resposta = [{"Tipus":"Turisme","Motor":"Elèctric","Any":"2022","Velocitat":"120"}]
 // espai per a les instruccions que s'executen en rebre la llista
         });
+
+
 function canvia_seccio(num_boto) {
     const menu = document.getElementById("menu");
     const num_botons = menu.children.length;    // el nombre de botons dins de l'element "menu"
@@ -24,11 +26,11 @@ function canvia_seccio(num_boto) {
             seccio.style.display = "none";    // s'oculten les seccions inactives
     }
 }
+}
 
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
 let nom, contrasenya;
-let scriptURL = "https://script.google.com/macros/s/AKfycbwyzwldvEb4U-AIuEbB27BvArolEW_Tg5_JloJ3a4vGqe1pujeielQs1dbMSnb0wLe1Hw/exec"    // s'ha de substituir la cadena de text per la URL del script
- 
+    // s'ha de substituir la cadena de text per la URL del script 
 function inici_sessio() {
     nom = document.getElementById("nom_usuari").value;    // la propietat "value" d'un quadre de text correspon al text escrit per l'usuari
     contrasenya = document.getElementById("contrasenya").value;
